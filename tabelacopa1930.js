@@ -1,39 +1,58 @@
-var botao1 = document.getElementById("botao1");
-var botao2 = document.getElementById("botao2");
-var botao3 = document.getElementById("botao3");
+var btn1 = document.querySelector('#show-or-ride');
+var container1 = document.querySelector('container1');
+var btn2 = document.querySelector('#mostrar-ou-esconder');
+var container2 = document.querySelector('.container2');
+var btn3 = document.querySelector('#expor-ou-ocultar');
+var container3 = document.querySelector('.container3');
+var btn4 = document.querySelector('#apresentar-ou-camuflar');
+var container4 = document.querySelector('.container4');
+container1.style.display = none;
+container2.style.display = none;
+container3.style.display = none;
+container4.style.display = none;
 
-var conteudoAtual = null;
-
-botao1.addEventListener("click", function() {
-  var htmlEspecifico = "<p><h1>Tudo</h1></p>";
-  exibirConteudoHTML(htmlEspecifico);
-});
-
-botao2.addEventListener("click", function() {
-  var htmlEspecifico = "";
-  exibirConteudoHTML(htmlEspecifico);
-});
-
-botao3.addEventListener("click", function() {
-  var htmlEspecifico = "<p>Código HTML extenso para o Botão 3...</p>";
-  exibirConteudoHTML(htmlEspecifico);
-});
-
-function exibirConteudoHTML(conteudoHTML) {
-  if (conteudoAtual !== null) {
-    // Remove o conteúdo HTML anterior
-    conteudoAtual.parentNode.removeChild(conteudoAtual);
+btn1.addEventListener('click', function () {
+  if (container1.style.display === 'none' ) {
+    container1.style.display='block';
+    container2.style.display='none';
+    container3.style.display='none';
+    container4.style.display='none';
   }
+  else{
+    container1.style.display='none';
+  }
+});
+btn2.addEventListener('click', function () {
+  if (container2.style.display === 'none' ) {
+    container1.style.display='none';
+    container2.style.display='block';
+    container3.style.display='none';
+    container4.style.display='none';
+  }
+  else{
+    container2.style.display='none';
+  }
+});
+btn3.addEventListener('click', function () {
+  if (container3.style.display === 'none' ) {
+    container1.style.display='none';
+    container2.style.display='none';
+    container3.style.display='block';
+    container4.style.display='none';
+  }
+  else{
+    container3.style.display='none';
+  }
+});
+btn4.addEventListener('click', function () {
+  if (container4.style.display === 'none' ) {
+    container1.style.display='none';
+    container2.style.display='none';
+    container3.style.display='none';
+    container4.style.display='block';
+  }
+  else{
+    container4.style.display='none';
+  }
+});
 
-  var iframe = document.createElement("iframe");
-  iframe.setAttribute("srcdoc", conteudoHTML);
-  iframe.style.width = "100%";
-  iframe.style.height = "500px";
-
-  var resultado = document.getElementById("resultado");
-  resultado.innerHTML = '';
-  resultado.appendChild(iframe);
-
-  // Define o novo conteúdo HTML como atual
-  conteudoAtual = iframe;
-}
