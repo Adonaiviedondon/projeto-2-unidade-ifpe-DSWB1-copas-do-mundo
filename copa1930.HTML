@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale1.0">
     <link rel="stylesheet" type="text/css" href="estilo.css">
-    <script src="tabelacopa1930.js"></script>
+    <script src="exibircopas.js"></script>
     <title>COPA DO MUNDO DE 1930</title>
 </head>
 
@@ -81,67 +81,180 @@
     </main>
 
 
-    <button onclick="alternarDados('dado1')">Mostrar tabela de jogos</button>
-    <button onclick="alternarDados('dado2')">mostrar artilharia</button>
-    <button onclick="alternarDados('dado3')">Mostrar estadios</button>
-    <button onclick="alternarDados('dado4')">Mostrar curiosidades</button>
-    <div class="conteudo" id="dado1">
+    <button onclick="alternarConteudo('botao1')">Mostrar tabela de jogos</button>
+    <button onclick="alternarConteudo('botao2')">Mostrar artilharia</button>
+    <button onclick="alternarConteudo('botao3')">Mostrar estadios</button>
+    <button onclick="alternarConteudo('botao4')">Mostrar curiosidades</button>
 
-        <h1>tabela de jogos 1930</h1>
+    <div class="conteudo" id="botao1">
+
+        <h2>tabela de jogos da copa de 1930</h2>
+        <button onclick="exibirConteudo('botaoA')">Grupo A</button>
+        <button onclick="exibirConteudo('botaoB')">Grupo B</button>
+        <button onclick="exibirConteudo('botaoC')">Grupo C</button>
+        <button onclick="exibirConteudo('botaoD')">Grupo D</button>
+        <button onclick="exibirConteudo('botaoE')">Semifinal</button>
+        <button onclick="exibirConteudo('botaoF')">Final</button>
+        <div class="conteudo-oculto" id="botaoA">
+            <table>
+                <h3>grupo A</h3>
+                <tr>
+                    <td><strong>data</strong></td>
+                    <td>time A</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>time B</td>
+                    <td><strong>Local</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>13 de julho</strong></td>
+                    <td>Franca</td>
+                    <td>4</td>
+                    <td>x</td>
+                    <td>1</td>
+                    <td>Mexico</td>
+                    <td><strong>Pocitos</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>15 de julho</strong></td>
+                    <td>Argentina</td>
+                    <td>1</td>
+                    <td>x</td>
+                    <td>0</td>
+                    <td>Franca</td>
+                    <td><strong>Parque Central</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>16 de julho</strong></td>
+                    <td>Chile</td>
+                    <td>3</td>
+                    <td>x</td>
+                    <td>0</td>
+                    <td>Mexico</td>
+                    <td><strong>Parque Central</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>19 de julho</strong></td>
+                    <td>Chile</td>
+                    <td>1</td>
+                    <td>x</td>
+                    <td>0</td>
+                    <td>Franca</td>
+                    <td><strong>Centenario</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>19 de julho</strong></td>
+                    <td>Argentina</td>
+                    <td>6</td>
+                    <td>x</td>
+                    <td>3</td>
+                    <td>Mexico</td>
+                    <td><strong>Centenario</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>22 de julho</strong></td>
+                    <td>Argentina</td>
+                    <td>3</td>
+                    <td>x</td>
+                    <td>1</td>
+                    <td>Chile</td>
+                    <td><strong>Centenario</strong></td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th>POS</th>
+                    <th>P</th>
+                    <th>V</th>
+                    <th>E</th>
+                    <th>D</th>
+                    <th>GP</th>
+                    <th>GC</th>
+                    <th>SG</th>
+                </tr>
+                <tr class="linha-verde">
+                    <td>Argentina</td>
+                    <td>6</td>
+                    <td>3</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>10</td>
+                    <td>4</td>
+                    <td>+6</td>
+                </tr>
+                <tr class="linha-vermelha">
+                    <td>Chile</td>
+                    <td>4</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>5</td>
+                    <td>3</td>
+                    <td>+2</td>
+
+                </tr>
+                <tr class="linha-vermelha">
+                    <td>França</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>2</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>+1</td>
+                </tr>
+                <tr class="linha-vermelha">
+                    <td>mexico</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>13</td>
+                    <td>-9</td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+    <div class="conteudo-oculto" id="botaoB">
         <table>
-            <h3>grupo A</h3>
+            <h3>grupo B</h3>
             <tr>
-                <td><strong>13 de julho</strong></td>
-                <td>Franca</td>
+                <td><strong>data</strong></td>
+                <td>time A</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>time B</td>
+                <td><strong>Local</strong></td>
+            </tr>
+            <tr>
+                <td><strong>14 de julho</strong></td>
+                <td>Iuguslavia</td>
+                <td>2</td>
+                <td>x</td>
+                <td>1</td>
+                <td>Brasil</td>
+                <td><strong>Parque Central</strong></td>
+            </tr>
+            <tr>
+                <td><strong>17 de julho</strong></td>
+                <td>Iuguslavia</td>
                 <td>4</td>
                 <td>x</td>
-                <td>1</td>
-                <td>Mexico</td>
-                <td><strong>Pocitos</strong></td>
-            </tr>
-            <tr>
-                <td><strong>15 de julho</strong></td>
-                <td>Argentina</td>
-                <td>1</td>
-                <td>x</td>
                 <td>0</td>
-                <td>Franca</td>
+                <td>Bolivia</td>
                 <td><strong>Parque Central</strong></td>
             </tr>
             <tr>
-                <td><strong>16 de julho</strong></td>
-                <td>Chile</td>
-                <td>3</td>
+                <td><strong>17 de julho</strong></td>
+                <td>Brasil</td>
+                <td>4</td>
                 <td>x</td>
                 <td>0</td>
-                <td>Mexico</td>
-                <td><strong>Parque Central</strong></td>
-            </tr>
-            <tr>
-                <td><strong>19 de julho</strong></td>
-                <td>Chile</td>
-                <td>1</td>
-                <td>x</td>
-                <td>0</td>
-                <td>Franca</td>
-                <td><strong>Centenario</strong></td>
-            </tr>
-            <tr>
-                <td><strong>19 de julho</strong></td>
-                <td>Argentina</td>
-                <td>6</td>
-                <td>x</td>
-                <td>3</td>
-                <td>Mexico</td>
-                <td><strong>Centenario</strong></td>
-            </tr>
-            <tr>
-                <td><strong>22 de julho</strong></td>
-                <td>Argentina</td>
-                <td>3</td>
-                <td>x</td>
-                <td>1</td>
-                <td>Chile</td>
+                <td>Bolivia</td>
                 <td><strong>Centenario</strong></td>
             </tr>
         </table>
@@ -156,79 +269,282 @@
                 <th>GC</th>
                 <th>SG</th>
             </tr>
-            <tr>
-                <td>Argentina</td>
-                <td>3</td>
-                <td>3</td>
+            <tr class="linha-verde">
+                <td>Iuguslavia</td>
+                <td>4</td>
+                <td>2</td>
                 <td>0</td>
                 <td>0</td>
-                <td>10</td>
-                <td>5</td>
+                <td>6</td>
+                <td>1</td>
                 <td>+5</td>
             </tr>
+            <tr class="linha-vermelha">
+                <td>Brasil</td>
+                <td>2</td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+                <td>5</td>
+                <td>2</td>
+                <td>+3</td>
+
+            </tr>
+            <tr class="linha-vermelha">
+                <td>Bolivia</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>2</td>
+                <td>0</td>
+                <td>8</td>
+                <td>-8</td>
+            </tr>
+        </table>
+    </div>
+    <div class="conteudo-oculto" id="botaoC">
+        <table>
+            <h3>grupo C</h3>
             <tr>
-                <td>Time B</td>
-                <td>10</td>
+                <td><strong>data</strong></td>
+                <td>time A</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>time B</td>
+                <td><strong>Local</strong></td>
+            </tr>
+            <tr>
+                <td><strong>14 de julho</strong></td>
+                <td>Romenia</td>
                 <td>3</td>
+                <td>x</td>
                 <td>1</td>
-                <td>1</td>
-                <td>8</td>
-                <td>6</td>
-                <td>+2</td>
+                <td>Peru</td>
+                <td><strong>Pocitos</strong></td>
             </tr>
             <tr>
-                <td>Time C</td>
-                <td>8</td>
-                <td>2</td>
-                <td>2</td>
+                <td><strong>17 de julho</strong></td>
+                <td>Uruguai</td>
                 <td>1</td>
-                <td>7</td>
-                <td>6</td>
-                <td>+1</td>
+                <td>x</td>
+                <td>0</td>
+                <td>Peru</td>
+                <td><strong>Centenario</strong></td>
             </tr>
             <tr>
-                <td>Time D</td>
+                <td><strong>17 de julho</strong></td>
+                <td>Uruguai</td>
                 <td>4</td>
+                <td>x</td>
+                <td>0</td>
+                <td>Romenia</td>
+                <td><strong>Centenario</strong></td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <th>POS</th>
+                <th>P</th>
+                <th>V</th>
+                <th>E</th>
+                <th>D</th>
+                <th>GP</th>
+                <th>GC</th>
+                <th>SG</th>
+            </tr>
+            <tr class="linha-verde">
+                <td>Uruguai</td>
+                <td>4</td>
+                <td>2</td>
+                <td>0</td>
+                <td>0</td>
+                <td>5</td>
+                <td>0</td>
+                <td>+5</td>
+            </tr>
+            <tr class="linha-vermelha">
+                <td>Romenia</td>
+                <td>2</td>
                 <td>1</td>
+                <td>0</td>
                 <td>1</td>
                 <td>3</td>
                 <td>5</td>
-                <td>9</td>
+                <td>-2</td>
+
+            </tr>
+            <tr class="linha-vermelha">
+                <td>Peru</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>2</td>
+                <td>1</td>
+                <td>4</td>
+                <td>-3</td>
+            </tr>
+        </table>
+    </div>
+    <div class="conteudo-oculto" id="botaoD">
+        <table>
+            <h3>grupo D</h3>
+            <tr>
+                <td><strong>data</strong></td>
+                <td>time A</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>time B</td>
+                <td><strong>Local</strong></td>
+            </tr>
+            <tr>
+                <td><strong>13 de julho</strong></td>
+                <td>Estados Unidos</td>
+                <td>3</td>
+                <td>x</td>
+                <td>0</td>
+                <td>Belgica</td>
+                <td><strong>Parque Central</strong></td>
+            </tr>
+            <tr>
+                <td><strong>17 de julho</strong></td>
+                <td>Estados Unidos</td>
+                <td>3</td>
+                <td>x</td>
+                <td>0</td>
+                <td>Paraguai</td>
+                <td><strong>Parque Central</strong></td>
+            </tr>
+            <tr>
+                <td><strong>20 de julho</strong></td>
+                <td>Paraguai</td>
+                <td>1</td>
+                <td>x</td>
+                <td>0</td>
+                <td>Belgica</td>
+                <td><strong>Centenario</strong></td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <th>POS</th>
+                <th>P</th>
+                <th>V</th>
+                <th>E</th>
+                <th>D</th>
+                <th>GP</th>
+                <th>GC</th>
+                <th>SG</th>
+            </tr>
+            <tr class="linha-verde">
+                <td>Estados Unidos</td>
+                <td>4</td>
+                <td>2</td>
+                <td>0</td>
+                <td>0</td>
+                <td>6</td>
+                <td>0</td>
+                <td>+6</td>
+            </tr>
+            <tr class="linha-vermelha">
+                <td>Paraguai</td>
+                <td>2</td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+                <td>1</td>
+                <td>3</td>
+                <td>-2</td>
+
+            </tr>
+            <tr class="linha-vermelha">
+                <td>Belgica</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>2</td>
+                <td>0</td>
+                <td>4</td>
                 <td>-4</td>
             </tr>
         </table>
     </div>
-
-
-    <div class="conteudo" id="dado2">
-
-        <h1>artilharia da copa de 1930</h1>
-        <p>Este é o conteúdo 2 que será exibido ou ocultado quando o botão for clicado.</p>
+    <div class="conteudo-oculto" id="botaoE">
+        <table>
+            <h3>Semifinal</h3>
+            <tr>
+                <td><strong>data</strong></td>
+                <td>time A</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>time B</td>
+                <td><strong>Local</strong></td>
+            </tr>
+            <tr>
+                <td><strong>27 de julho</strong></td>
+                <td>Uruguai</td>
+                <td>6</td>
+                <td>x</td>
+                <td>1</td>
+                <td>Iuguslavia</td>
+                <td><strong>Centenario</strong></td>
+            </tr>
+            <tr>
+                <td><strong>26 de julho</strong></td>
+                <td>Argentina</td>
+                <td>6</td>
+                <td>x</td>
+                <td>1</td>
+                <td>Estados Unidos</td>
+                <td><strong>Centenario</strong></td>
+            </tr>
+        </table>
+    </div>
+    <div class="conteudo-oculto" id="botaoF">
+        <table>
+            <h3>Semifinal</h3>
+            <tr>
+                <td><strong>data</strong></td>
+                <td>time A</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>time B</td>
+                <td><strong>Local</strong></td>
+            </tr>
+            <tr>
+                <td><strong>30 de julho</strong></td>
+                <td>Uruguai</td>
+                <td>4</td>
+                <td>x</td>
+                <td>2</td>
+                <td>Argentina</td>
+                <td><strong>Centenario</strong></td>
+            </tr>
+        </table>
+    </div>
+    </div>
+    <div class="conteudo" id="botao2">
+        <!-- Botão 2 -->
+        <h2>Botão 2</h2>
+        <p>Este é o conteúdo do Botão 2.</p>
     </div>
 
-
-    <div class="conteudo" id="dado3">
-
-        <h2>estadios da copa de 1930</h2>
-        <p>Este é o conteúdo 3 que será exibido ou ocultado quando o botão for clicado.</p>
+    <div class="conteudo" id="botao3">
+        <!-- Botão 3 -->
+        <h2>Botão 3</h2>
+        <p>Este é o conteúdo do Botão 3.</p>
     </div>
 
-    <div class="conteudo" id="dado4">
-
-        <h2>curiosidades da copa de 1930</h2>
-        <fieldset>
-            <p>curiosidade 1:o privilégio de marcar o primeiro gol das histórias dos mundiais foi do francês Laurent no
-                jogo de França 4 x 1 méxico no dia 13 de julho </p><br>
-            <p>
-                no jogo de Romenia 3 x 1 peru registrou dois recordes negativos:um foi o menor numero de publico que foi
-                300 telespectadores e a primeira expulsao do mundial do peruano Placido Galindo
-            </p>
-
-
-        </fieldset>
+    <div class="conteudo" id="botao4">
+        <!-- Botão 4 -->
+        <h2>Botão 4</h2>
+        <p>Este é o conteúdo do Botão 4.</p>
     </div>
 
-    <script src="testecopa.js"></script>
+    <script src="exibircopas.js"></script>
 </body>
 
 </html>

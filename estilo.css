@@ -1,3 +1,30 @@
 .conteudo {
     display: none;
   }
+  
+  .conteudo-oculto {
+    display: none;
+  }
+  
+  table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    
+    th, td {
+      border: 1px solid black;
+      padding: 8px;
+      text-align: left;
+    }
+    
+    th {
+      background-color: #ccc;
+    }
+    .linha-verde td {
+      background-color: green;
+      color: black;
+    }
+    .linha-vermelha td {
+      background-color: red;
+      color: black;
+    }
