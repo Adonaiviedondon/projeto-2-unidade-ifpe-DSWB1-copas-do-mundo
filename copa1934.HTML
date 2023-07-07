@@ -67,14 +67,6 @@
             </fieldset>
         </form>
     </main>
-    <!DOCTYPE html>
-    <html>
-
-    <head>
-        <title>Exibir/Ocultar conteúdo com botão</title>
-        <link rel="stylesheet" type="text/css" href="teste3css.css">
-    </head>
-
     <body>
         <button onclick="alternarConteudo('botao1')">Mostrar tabela de jogos</button>
         <button onclick="alternarConteudo('botao2')">Mostrar artilharia</button>
@@ -87,7 +79,8 @@
             <button onclick="exibirConteudo('botaoA')">fase 1</button>
             <button onclick="exibirConteudo('botaoB')">quartas de final</button>
             <button onclick="exibirConteudo('botaoC')">Semifinal</button>
-            <button onclick="exibirConteudo('botaoD')">Finais</button>
+            <button onclick="exibirConteudo('botaoD')">disputa do terceiro lugar</button>
+            <button onclick="exibirConteudo('botaoE')">Final</button>
             <div class="conteudo-oculto" id="botaoA">
                 <table>
                     <h3>Fase 1</h3>
@@ -189,7 +182,7 @@
                     <td><strong>Local</strong></td>
                 </tr>
                 <tr>
-                    <td><strong>31 de maio</strong></td>
+                    <td><strong>31 de maio(1 de junho)</strong></td>
                     <td>Italia</td>
                     <td>1(1)</td>
                     <td>x</td>
@@ -224,13 +217,13 @@
                     <td>Suecia</td>
                     <td><strong>Milao</strong></td>
                 </tr>
-    
+
             </table>
         </div>
         </div>
         <div class="conteudo-oculto" id="botaoC">
             <table>
-                <h3>Senifinal</h3>
+                <h3>Semifinal</h3>
                 <tr>
                     <td><strong>data</strong></td>
                     <td>time A</td>
@@ -245,7 +238,7 @@
                     <td>Italia</td>
                     <td>1</td>
                     <td>x</td>
-                    <td>1</td>
+                    <td>0</td>
                     <td>Austria</td>
                     <td><strong>Milao</strong></td>
                 </tr>
@@ -258,15 +251,15 @@
                     <td>Alemanha</td>
                     <td><strong>Roma</strong></td>
                 </tr>
-    
-    
+
+
             </table>
         </div>
         </div>
         <div class="conteudo-oculto" id="botaoD">
             <table>
-                <h3>FINAIS</h3>
-                <h3>TERCEIRO LUGAR</h3>
+
+                <h3>disputa do terceiro lugar</h3>
                 <tr>
                     <td><strong>data</strong></td>
                     <td>time A</td>
@@ -285,7 +278,11 @@
                     <td>Austria</td>
                     <td><strong>Napoles</strong></td>
                 </tr>
-                <h3>FINAL</h3>
+            </table>
+        </div>
+        <div class="conteudo-oculto" id="botaoE">
+            <table>
+                <h3>Grande Final</h3>
                 <tr>
                     <td><strong>10 de junho</strong></td>
                     <td>Italia</td>
@@ -295,8 +292,8 @@
                     <td>Tchecoslovaquia</td>
                     <td><strong>Roma</strong></td>
                 </tr>
-    
-    
+
+
             </table>
         </div>
         </div>
@@ -321,4 +318,4 @@
         <script src="exibircopas.js"></script>
     </body>
 
-    </html>
+</html>
