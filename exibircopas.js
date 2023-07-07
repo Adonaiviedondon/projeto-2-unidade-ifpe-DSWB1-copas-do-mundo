@@ -17,6 +17,7 @@ function alternarConteudo(id) {
 
     if (id !== 'botao1') {
       ocultarConteudosBotao1();
+      
     }
 
     ultimoBotaoClicado = id;

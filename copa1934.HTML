@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale1.0">
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <script src="exibircopas.js"></script>
     <title>COPA DO MUNDO DE 1934</title>
 </head>
 
@@ -65,8 +67,258 @@
             </fieldset>
         </form>
     </main>
-    <button><a href="tabelas1934.HTML">ver dados da copa 1934</a></button>
+    <!DOCTYPE html>
+    <html>
 
-</body>
-</html>
-       
+    <head>
+        <title>Exibir/Ocultar conteúdo com botão</title>
+        <link rel="stylesheet" type="text/css" href="teste3css.css">
+    </head>
+
+    <body>
+        <button onclick="alternarConteudo('botao1')">Mostrar tabela de jogos</button>
+        <button onclick="alternarConteudo('botao2')">Mostrar artilharia</button>
+        <button onclick="alternarConteudo('botao3')">Mostrar estadios</button>
+        <button onclick="alternarConteudo('botao4')">Mostrar curiosidades</button>
+
+        <div class="conteudo" id="botao1">
+
+            <h2>tabela de jogos da copa de 1934</h2>
+            <button onclick="exibirConteudo('botaoA')">fase 1</button>
+            <button onclick="exibirConteudo('botaoB')">quartas de final</button>
+            <button onclick="exibirConteudo('botaoC')">Semifinal</button>
+            <button onclick="exibirConteudo('botaoD')">Finais</button>
+            <div class="conteudo-oculto" id="botaoA">
+                <table>
+                    <h3>Fase 1</h3>
+
+                    <tr>
+                        <td><strong>data</strong></td>
+                        <td>time A</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>time B</td>
+                        <td><strong>Local</strong></td>
+                    </tr>
+                    <tr>
+                        <td><strong>27 de maio</strong></td>
+                        <td>Italia</td>
+                        <td>7</td>
+                        <td>x</td>
+                        <td>1</td>
+                        <td>Estados unidos</td>
+                        <td><strong>Roma</strong></td>
+                    </tr>
+                    <tr>
+                        <td><strong>27 de maio</strong></td>
+                        <td>Espanha</td>
+                        <td>3</td>
+                        <td>x</td>
+                        <td>1</td>
+                        <td>Brasil</td>
+                        <td><strong>Genova</strong></td>
+                    </tr>
+                    <tr>
+                        <td><strong>27 de maio</strong></td>
+                        <td>Austria</td>
+                        <td>3</td>
+                        <td>x</td>
+                        <td>2</td>
+                        <td>Franca</td>
+                        <td><strong>Turim</strong></td>
+                    </tr>
+                    <tr>
+                        <td><strong>27 de maio</strong></td>
+                        <td>Hungria</td>
+                        <td>4</td>
+                        <td>x</td>
+                        <td>2</td>
+                        <td>Egito</td>
+                        <td><strong>Napoles</strong></td>
+                    </tr>
+                    <tr>
+                        <td><strong>27 de maio</strong></td>
+                        <td>Tchecoslovaquia</td>
+                        <td>2</td>
+                        <td>x</td>
+                        <td>1</td>
+                        <td>Romenia</td>
+                        <td><strong>Trieste</strong></td>
+                    </tr>
+                    <tr>
+                        <td><strong>27 de maio</strong></td>
+                        <td>Suica</td>
+                        <td>3</td>
+                        <td>x</td>
+                        <td>2</td>
+                        <td>Holanda</td>
+                        <td><strong>Milao</strong></td>
+                    </tr>
+                    <tr>
+                        <td><strong>27 de maio</strong></td>
+                        <td>Alemanha</td>
+                        <td>5</td>
+                        <td>x</td>
+                        <td>2</td>
+                        <td>Belgica</td>
+                        <td><strong>Florenca</strong></td>
+                    </tr>
+                    <tr>
+                        <td><strong>27 de maio</strong></td>
+                        <td>Suecia</td>
+                        <td>3</td>
+                        <td>x</td>
+                        <td>2</td>
+                        <td>Argentina</td>
+                        <td><strong>Florenca</strong></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="conteudo-oculto" id="botaoB">
+            <table>
+                <h3>quartas-de-final</h3>
+                <tr>
+                    <td><strong>data</strong></td>
+                    <td>time A</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>time B</td>
+                    <td><strong>Local</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>31 de maio</strong></td>
+                    <td>Italia</td>
+                    <td>1(1)</td>
+                    <td>x</td>
+                    <td>1(0)</td>
+                    <td>Espanha</td>
+                    <td><strong>Florenca</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>31 de maio</strong></td>
+                    <td>Austria</td>
+                    <td>2</td>
+                    <td>x</td>
+                    <td>1</td>
+                    <td>Hungria</td>
+                    <td><strong>Bolonha</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>31 de maio</strong></td>
+                    <td>Tchecoslovaquia</td>
+                    <td>3</td>
+                    <td>x</td>
+                    <td>2</td>
+                    <td>Suica</td>
+                    <td><strong>Turim</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>31 de maio</strong></td>
+                    <td>Alemanha</td>
+                    <td>2</td>
+                    <td>x</td>
+                    <td>1</td>
+                    <td>Suecia</td>
+                    <td><strong>Milao</strong></td>
+                </tr>
+    
+            </table>
+        </div>
+        </div>
+        <div class="conteudo-oculto" id="botaoC">
+            <table>
+                <h3>Senifinal</h3>
+                <tr>
+                    <td><strong>data</strong></td>
+                    <td>time A</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>time B</td>
+                    <td><strong>Local</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>3 de junho</strong></td>
+                    <td>Italia</td>
+                    <td>1</td>
+                    <td>x</td>
+                    <td>1</td>
+                    <td>Austria</td>
+                    <td><strong>Milao</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>3 de junho</strong></td>
+                    <td>Tchecoslovaquia</td>
+                    <td>3</td>
+                    <td>x</td>
+                    <td>1</td>
+                    <td>Alemanha</td>
+                    <td><strong>Roma</strong></td>
+                </tr>
+    
+    
+            </table>
+        </div>
+        </div>
+        <div class="conteudo-oculto" id="botaoD">
+            <table>
+                <h3>FINAIS</h3>
+                <h3>TERCEIRO LUGAR</h3>
+                <tr>
+                    <td><strong>data</strong></td>
+                    <td>time A</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>time B</td>
+                    <td><strong>Local</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>7 de junho</strong></td>
+                    <td>Alemanha</td>
+                    <td>3</td>
+                    <td>x</td>
+                    <td>2</td>
+                    <td>Austria</td>
+                    <td><strong>Napoles</strong></td>
+                </tr>
+                <h3>FINAL</h3>
+                <tr>
+                    <td><strong>10 de junho</strong></td>
+                    <td>Italia</td>
+                    <td>2</td>
+                    <td>x</td>
+                    <td>1</td>
+                    <td>Tchecoslovaquia</td>
+                    <td><strong>Roma</strong></td>
+                </tr>
+    
+    
+            </table>
+        </div>
+        </div>
+        <div class="conteudo" id="botao2">
+            <!-- Botão 2 -->
+            <h2>Botão 2</h2>
+            <p>Este é o conteúdo do Botão 2.</p>
+        </div>
+
+        <div class="conteudo" id="botao3">
+            <!-- Botão 3 -->
+            <h2>Botão 3</h2>
+            <p>Este é o conteúdo do Botão 3.</p>
+        </div>
+
+        <div class="conteudo" id="botao4">
+            <!-- Botão 4 -->
+            <h2>Botão 4</h2>
+            <p>Este é o conteúdo do Botão 4.</p>
+        </div>
+
+        <script src="exibircopas.js"></script>
+    </body>
+
+    </html>
