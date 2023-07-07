@@ -1,24 +1,44 @@
 var ultimoBotaoClicado = null;
 
-
 function alternarConteudo(id) {
   var conteudos = document.getElementsByClassName('conteudo');
 
-  for (var i = 0; i < conteudos.length; i++) {
-    if (conteudos[i].id === id) {
-      conteudos[i].style.display = 'block';
-      ocultarConteudosBotao1();
-    } else {
-      conteudos[i].style.display = 'none';
+  if (ultimoBotaoClicado === id) {
+    ocultarConteudo(id);
+    ultimoBotaoClicado = null;
+  } else {
+    for (var i = 0; i < conteudos.length; i++) {
+      if (conteudos[i].id === id) {
+        conteudos[i].style.display = 'block';
+      } else {
+        conteudos[i].style.display = 'none';
+      }
     }
+
+    if (id !== 'botao1') {
+      ocultarConteudosBotao1();
+    }
+
+    ultimoBotaoClicado = id;
   }
 }
 
 function exibirConteudo(id) {
   var conteudo = document.getElementById(id);
-  conteudo.style.display = 'block';
-  ocultarOutrosConteudos(id);
-  
+
+  if (conteudo.style.display === 'block') {
+    conteudo.style.display = 'none';
+    ultimoBotaoClicado = null;
+  } else {
+    conteudo.style.display = 'block';
+    ocultarOutrosConteudos(id);
+    ultimoBotaoClicado = id;
+  }
+}
+
+function ocultarConteudo(id) {
+  var conteudo = document.getElementById(id);
+  conteudo.style.display = 'none';
 }
 
 function ocultarConteudosBotao1() {
