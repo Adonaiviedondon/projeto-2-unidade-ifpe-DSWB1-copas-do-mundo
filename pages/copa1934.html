@@ -5,9 +5,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale1.0">
-    <link rel="stylesheet" type="text/css" href="estilo.css">
-    <script src="exibircopas.js"></script>
-    <title>COPA DO MUNDO DE 1938</title>
+    <link rel="stylesheet" type="text/css" href="/assets/css/estilo.css">
+    <script src="/script/exibircopas.js"></script>
+    <title>COPA DO MUNDO DE 1934</title>
 </head>
 
 <body>
@@ -38,36 +38,35 @@
         </nav>
     </header>
     <main>
-        <h1 style="text-align: center;">COPA DO MUNDO DE 1938</h1>
-        <img src="imagens/img1938/emblema1938.png" alt="emblema.copa1938" src="emblema.copa1938">
+        <h1 style="text-align: center;">COPA DO MUNDO DE 1934</h1>
+        <img src="/assets/imagens/img1934/emblema1934.png" alt="emblema.copa1934" src="emblema.copa1934">
         <form>
             <fieldset>
                 <form>
                     <legend>Dados do Torneio</legend>
-                    <li>pais-sede: <input type="text" name="pais-sede" value="França" disabled><br></li>
+                    <li>pais-sede: <input type="text" name="pais-sede" value="Italia" disabled><br></li>
                     <li>campeao: <input type="text" name="campeao" value="Italia" disabled><br></li>
-                    <li>vice-campeao: <input type="text" name="vice-campeao" value="Hungria" disabled><br></li>
-                    <li>terceiro lugar: <input type="text" name="terceiro lugar" value="Brasil" disabled><br></li>
-                    <li>quarto lugar: <input type="text" name="quarto lugar" value="Suecia" disabled><br></li>
-                    <li>numero de partcipantes: <input type="number" name="numero de partcipantes" value="15"
+                    <li>vice-campeao: <input type="text" name="vice-campeao" value="Tchecoslovaquia" disabled><br></li>
+                    <li>terceiro lugar: <input type="text" name="terceiro lugar" value="Alemanha" disabled><br></li>
+                    <li>quarto lugar: <input type="text" name="quarto lugar" value="Austria" disabled><br></li>
+                    <li>numero de partcipantes: <input type="number" name="numero de partcipantes" value="16"
                             disabled><br></li>
-                    <li>data de inicio: <input type="date" name="data de inicio" value="1938-06-04" disabled><br></li>
-                    <li>data de termino: <input type="date" name="data de termino" value="1938-06-19" disabled><br></li>
-                    <li>numero de estadios: <input type="number" name="numero de estadios" value="11" disabled><br></li>
-                    <li>numero de jogos: <input type="number" name="numero de jogos" value="18" disabled><br></li>
-                    <li>numero de gols: <input type="number" name="numero de gols" value="84" disabled><br></li>
-                    <li>media de gols por partida: <input type="number" name="media de gols por partida" value="4.67"
+                    <li>data de inicio: <input type="date" name="data de inicio" value="1934-05-27" disabled><br></li>
+                    <li>data de termino: <input type="date" name="data de termino" value="1934-06-10" disabled><br></li>
+                    <li>numero de estadios: <input type="number" name="numero de estadios" value="8" disabled><br></li>
+                    <li>numero de jogos: <input type="number" name="numero de jogos" value="17" disabled><br></li>
+                    <li>numero de gols: <input type="number" name="numero de gols" value="70" disabled><br></li>
+                    <li>media de gols por partida: <input type="number" name="media de gols por partida" value="4.12"
                             disabled><br></li>
-                    <li>bola oficial: <input type="text" name="bola oficial" value="Superball Duplo T" disabled><br>
+                    <li>bola oficial: <input type="text" name="bola oficial" value="A Federale 102" disabled><br>
                     </li>
-                    <li>artilheiros: <input type="text" name="artilheiros" value="Leônidas da Silva" disabled><br></li>
+                    <li>artilheiros: <input type="text" name="artilheiros" value="Oldřich Nejedlý" disabled><br></li>
                     <li>mascote: <input type="text" name="mascote" value="não teve" disabled><br></li>
-                    <li>publico: <input type="number" name="publico" value="369720" disabled><br></li>
+                    <li>publico: <input type="number" name="publico" value="358000" disabled><br></li>
                 </form>
             </fieldset>
         </form>
     </main>
-
     <body>
         <button onclick="alternarConteudo('botao1')">Mostrar tabela de jogos</button>
         <button onclick="alternarConteudo('botao2')">Mostrar artilharia</button>
@@ -76,15 +75,16 @@
 
         <div class="conteudo" id="botao1">
 
-            <h2>tabela de jogos da copa de 1938</h2>
-            <button onclick="exibirConteudo('botaoA')">oitavas de final</button>
+            <h2>tabela de jogos da copa de 1934</h2>
+            <button onclick="exibirConteudo('botaoA')">fase 1</button>
             <button onclick="exibirConteudo('botaoB')">quartas de final</button>
             <button onclick="exibirConteudo('botaoC')">Semifinal</button>
             <button onclick="exibirConteudo('botaoD')">disputa do terceiro lugar</button>
             <button onclick="exibirConteudo('botaoE')">Final</button>
             <div class="conteudo-oculto" id="botaoA">
                 <table>
-                    <h3>oitavas-de-final</h3>
+                    <h3>Fase 1</h3>
+
                     <tr>
                         <td><strong>data</strong></td>
                         <td>time A</td>
@@ -95,75 +95,75 @@
                         <td><strong>Local</strong></td>
                     </tr>
                     <tr>
-                        <td><strong>5 de junho</strong></td>
+                        <td><strong>27 de maio</strong></td>
                         <td>Italia</td>
+                        <td>7</td>
+                        <td>x</td>
+                        <td>1</td>
+                        <td>Estados unidos</td>
+                        <td><strong>Roma</strong></td>
+                    </tr>
+                    <tr>
+                        <td><strong>27 de maio</strong></td>
+                        <td>Espanha</td>
+                        <td>3</td>
+                        <td>x</td>
+                        <td>1</td>
+                        <td>Brasil</td>
+                        <td><strong>Genova</strong></td>
+                    </tr>
+                    <tr>
+                        <td><strong>27 de maio</strong></td>
+                        <td>Austria</td>
+                        <td>3</td>
+                        <td>x</td>
+                        <td>2</td>
+                        <td>Franca</td>
+                        <td><strong>Turim</strong></td>
+                    </tr>
+                    <tr>
+                        <td><strong>27 de maio</strong></td>
+                        <td>Hungria</td>
+                        <td>4</td>
+                        <td>x</td>
+                        <td>2</td>
+                        <td>Egito</td>
+                        <td><strong>Napoles</strong></td>
+                    </tr>
+                    <tr>
+                        <td><strong>27 de maio</strong></td>
+                        <td>Tchecoslovaquia</td>
                         <td>2</td>
                         <td>x</td>
                         <td>1</td>
-                        <td>Noruega</td>
-                        <td><strong>Marselha</strong></td>
-                    </tr>
-                    <tr>
-                        <td><strong>5 de junho</strong></td>
-                        <td>Franca</td>
-                        <td>3</td>
-                        <td>x</td>
-                        <td>1</td>
-                        <td>Belgica</td>
-                        <td><strong>Paris</strong></td>
-                    </tr>
-                    <tr>
-                        <td><strong>5 de junho</strong></td>
-                        <td>Brasil</td>
-                        <td>6</td>
-                        <td>x</td>
-                        <td>5</td>
-                        <td>Polonia</td>
-                        <td><strong>Estrasburgo</strong></td>
-                    </tr>
-                    <tr>
-                        <td><strong>5 de junho</strong></td>
-                        <td>Tchecoslovaquia</td>
-                        <td>3</td>
-                        <td>x</td>
-                        <td>0</td>
-                        <td>Holanda</td>
-                        <td><strong>Le Havre</strong></td>
-                    </tr>
-                    <tr>
-                        <td><strong>5 de junho</strong></td>
-                        <td>Hungria</td>
-                        <td>6</td>
-                        <td>x</td>
-                        <td>0</td>
-                        <td>Índias Orientais holandesas</td>
-                        <td><strong> Reims</strong></td>
-                    </tr>
-                    <tr>
-                        <td><strong>5 de junho(9 de Junho)</strong></td>
-                        <td>Suica</td>
-                        <td>1(4)</td>
-                        <td>x</td>
-                        <td>1(2)</td>
-                        <td>Alemanha</td>
-                        <td><strong> Paris</strong></td>
-                    </tr>
-                    <tr>
-                        <td><strong>5 de junho</strong></td>
-                        <td>Suecia</td>
-                        <td>wo</td>
-                        <td>x</td>
-                        <td>-</td>
-                        <td>Austria</td>
-                        <td><strong>Lyon</strong></td>
-                    </tr>
-                    <tr>
-                        <td><strong>5 de junho (9 de Junho)</strong></td>
-                        <td>Cuba</td>
-                        <td>3(2)</td>
-                        <td>x</td>
-                        <td>3(1)</td>
                         <td>Romenia</td>
+                        <td><strong>Trieste</strong></td>
+                    </tr>
+                    <tr>
+                        <td><strong>27 de maio</strong></td>
+                        <td>Suica</td>
+                        <td>3</td>
+                        <td>x</td>
+                        <td>2</td>
+                        <td>Holanda</td>
+                        <td><strong>Milao</strong></td>
+                    </tr>
+                    <tr>
+                        <td><strong>27 de maio</strong></td>
+                        <td>Alemanha</td>
+                        <td>5</td>
+                        <td>x</td>
+                        <td>2</td>
+                        <td>Belgica</td>
+                        <td><strong>Florenca</strong></td>
+                    </tr>
+                    <tr>
+                        <td><strong>27 de maio</strong></td>
+                        <td>Suecia</td>
+                        <td>3</td>
+                        <td>x</td>
+                        <td>2</td>
+                        <td>Argentina</td>
                         <td><strong>Florenca</strong></td>
                     </tr>
                 </table>
@@ -182,41 +182,42 @@
                     <td><strong>Local</strong></td>
                 </tr>
                 <tr>
-                    <td><strong>12 de junho</strong></td>
+                    <td><strong>31 de maio(1 de junho)</strong></td>
                     <td>Italia</td>
-                    <td>3</td>
-                    <td>x</td>
-                    <td>1</td>
-                    <td>Franca</td>
-                    <td><strong>Paris</strong></td>
-                </tr>
-                <tr>
-                    <td><strong>12 de junho(14 de Junho)</strong></td>
-                    <td>Brasil</td>
-                    <td>1(2)</td>
-                    <td>x</td>
                     <td>1(1)</td>
-                    <td>Tchecoslovaquia</td>
-                    <td><strong>Bodeaux</strong></td>
+                    <td>x</td>
+                    <td>1(0)</td>
+                    <td>Espanha</td>
+                    <td><strong>Florenca</strong></td>
                 </tr>
                 <tr>
-                    <td><strong>12 de junho</strong></td>
-                    <td>Hungria</td>
+                    <td><strong>31 de maio</strong></td>
+                    <td>Austria</td>
                     <td>2</td>
                     <td>x</td>
-                    <td>0</td>
-                    <td>Suica</td>
-                    <td><strong>Lille</strong></td>
+                    <td>1</td>
+                    <td>Hungria</td>
+                    <td><strong>Bolonha</strong></td>
                 </tr>
                 <tr>
-                    <td><strong>12 de junho</strong></td>
-                    <td>Suecia</td>
-                    <td>8</td>
+                    <td><strong>31 de maio</strong></td>
+                    <td>Tchecoslovaquia</td>
+                    <td>3</td>
                     <td>x</td>
-                    <td>0</td>
-                    <td>Cuba</td>
-                    <td><strong>Antibes</strong></td>
+                    <td>2</td>
+                    <td>Suica</td>
+                    <td><strong>Turim</strong></td>
                 </tr>
+                <tr>
+                    <td><strong>31 de maio</strong></td>
+                    <td>Alemanha</td>
+                    <td>2</td>
+                    <td>x</td>
+                    <td>1</td>
+                    <td>Suecia</td>
+                    <td><strong>Milao</strong></td>
+                </tr>
+
             </table>
         </div>
         </div>
@@ -233,22 +234,22 @@
                     <td><strong>Local</strong></td>
                 </tr>
                 <tr>
-                    <td><strong>16 de junho</strong></td>
+                    <td><strong>3 de junho</strong></td>
                     <td>Italia</td>
-                    <td>2</td>
-                    <td>x</td>
                     <td>1</td>
-                    <td>Brasil</td>
-                    <td><strong>Marselha</strong></td>
+                    <td>x</td>
+                    <td>0</td>
+                    <td>Austria</td>
+                    <td><strong>Milao</strong></td>
                 </tr>
                 <tr>
-                    <td><strong>16 de junho</strong></td>
-                    <td>Hungria</td>
-                    <td>5</td>
+                    <td><strong>3 de junho</strong></td>
+                    <td>Tchecoslovaquia</td>
+                    <td>3</td>
                     <td>x</td>
                     <td>1</td>
-                    <td>Suecia</td>
-                    <td><strong>Paris</strong></td>
+                    <td>Alemanha</td>
+                    <td><strong>Roma</strong></td>
                 </tr>
 
 
@@ -269,13 +270,13 @@
                     <td><strong>Local</strong></td>
                 </tr>
                 <tr>
-                    <td><strong>19 de junho</strong></td>
-                    <td>Brasil</td>
-                    <td>4</td>
+                    <td><strong>7 de junho</strong></td>
+                    <td>Alemanha</td>
+                    <td>3</td>
                     <td>x</td>
                     <td>2</td>
-                    <td>Suecia</td>
-                    <td><strong>Bordeaux</strong></td>
+                    <td>Austria</td>
+                    <td><strong>Napoles</strong></td>
                 </tr>
             </table>
         </div>
@@ -283,13 +284,13 @@
             <table>
                 <h3>Grande Final</h3>
                 <tr>
-                    <td><strong>19 de junho</strong></td>
+                    <td><strong>10 de junho</strong></td>
                     <td>Italia</td>
-                    <td>4</td>
-                    <td>x</td>
                     <td>2</td>
-                    <td>Hungria</td>
-                    <td><strong>Paris</strong></td>
+                    <td>x</td>
+                    <td>1</td>
+                    <td>Tchecoslovaquia</td>
+                    <td><strong>Roma</strong></td>
                 </tr>
 
 
