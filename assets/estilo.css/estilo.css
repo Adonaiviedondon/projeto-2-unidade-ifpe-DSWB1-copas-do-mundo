@@ -36,4 +36,8 @@ button {
   border: 1px solid black;
   cursor: pointer;
 }
+p {
+  text-align: justify;
+  text-indent: 20px;
+}
 
