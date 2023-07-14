@@ -1,0 +1,106 @@
+.conteudo {
+  display: none;
+}
+
+.conteudo-oculto {
+  display: none;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #ccc;
+}
+
+p {
+  text-align: justify;
+  text-indent: 20px;
+}
+
+/* Estilos adicionais para a página de tema de futebol */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f1f1f1;
+  color: #333333;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #007bff;
+  padding: 10px;
+}
+
+nav {
+  text-align: center;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+article {
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  margin: 20px auto;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
