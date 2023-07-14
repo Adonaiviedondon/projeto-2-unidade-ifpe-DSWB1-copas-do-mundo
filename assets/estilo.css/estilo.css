@@ -31,6 +31,10 @@ th {
   background-color: red;
   color: black;
 }
+.linha-azul td{
+  background-color: blue;
+  color: black;
+}
 button {
   padding: 10px 20px;
   border: 1px solid black;
