@@ -10,16 +10,15 @@ table {
   border-collapse: collapse;
   width: 100%;
 }
+table th {
+  background-color:white ;
+}
 
 th,
 td {
   border: 1px solid black;
   padding: 8px;
   text-align: left;
-}
-
-th {
-  background-color: #ccc;
 }
 
 p {
@@ -103,4 +102,16 @@ button a {
 
 button:hover {
   background-color: #0056b3;
+}
+.linha-verde {
+  background-color: green;
+  color: black;
+}
+.linha-vermelha {
+  background-color: red;
+  color: black;
+}
+.linha-azul{
+  background-color: blue;
+  color: black;
 }

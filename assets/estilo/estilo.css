@@ -22,24 +22,7 @@ th {
   background-color: #ccc;
 }
 
-.linha-verde td {
-  background-color: green;
-  color: black;
-}
 
-.linha-vermelha td {
-  background-color: red;
-  color: black;
-}
-.linha-azul td{
-  background-color: blue;
-  color: black;
-}
-button {
-  padding: 10px 20px;
-  border: 1px solid black;
-  cursor: pointer;
-}
 p {
   text-align: justify;
   text-indent: 20px;
