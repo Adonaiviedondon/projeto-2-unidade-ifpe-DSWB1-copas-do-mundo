@@ -37,39 +37,995 @@
             <a href="copa2022.html">copa2022</a>
         </nav>
     </header>
-        <main>
-            <h1 style = "text-align: center;">COPA DO MUNDO DE 1986</h1>
-            <img src="../assets/imagens/img1986/emblema1986.png" alt="emblema.copa1986" src="emblema.copa1986">
-            <form>
-                <fieldset>
-                    <form>
-                        <legend>Dados do Torneio</legend>
-                        <li>pais-sede: <input type="text" name="pais-sede" value="Mexico" disabled><br></li>
-                        <li>campeao: <input type="text" name="campeao" value="Argentina" disabled><br></li>
-                        <li>vice-campeao: <input type="text" name="vice-campeao" value="Alemanha" disabled><br></li>
-                        <li>terceiro lugar: <input type="text" name="terceiro lugar" value="França" disabled><br></li>
-                        <li>quarto lugar: <input type="text" name="quarto lugar" value="Belgica" disabled><br></li>
-                        <li>numero de partcipantes: <input type="number" name="numero de partcipantes" value="24"
-                                disabled><br>
-                        </li>
-                        <li>data de inicio: <input type="date" name="data de inicio" value="1986-05-31" disabled><br>
-                        </li>
-                        <li>data de termino: <input type="date" name="data de termino" value="1986-06-29" disabled><br>
-                        </li>
-                        <li>numero de estadios: <input type="number" name="numero de estadios" value="12" disabled><br>
-                        </li>
-                        <li>numero de jogos: <input type="number" name="numero de jogos" value="52" disabled><br></li>
-                        <li>numero de gols: <input type="number" name="numero de gols" value="132" disabled><br></li>
-                        <li>media de gols por partida: <input type="number" name="media de gols por partida"
-                                value="2.54" disabled><br></li>
-                        <li>bola oficial: <input type="text" name="bola oficial" value="Adidas Azteca " disabled><br>
-                        </li>
-                        <li>artilheiros: <input type="text" name="artilheiros" value="Gary Lineker" disabled><br></li>
-                        <li>mascote: <input type="text" name="mascote" value="PIQUE" disabled><br></li>
-                        <li>publico: <input type="number" name="publico" value="2393331" disabled><br></li>
-                    </form>
-                </fieldset>
-            </form>
-        </main>
-        <button><a href="tabelas1986.html">ver dados da copa 1986</a></button>
+    <main>
+        <h1 style="text-align: center;">COPA DO MUNDO DE 1986</h1>
+        <img src="../assets/imagens/img1986/emblema1986.png" alt="emblema.copa1986" src="emblema.copa1986">
+        <form>
+            <fieldset>
+                <form>
+                    <legend>Dados do Torneio</legend>
+                    <li>pais-sede: <input type="text" name="pais-sede" value="Mexico" disabled><br></li>
+                    <li>campeao: <input type="text" name="campeao" value="Argentina" disabled><br></li>
+                    <li>vice-campeao: <input type="text" name="vice-campeao" value="Alemanha" disabled><br></li>
+                    <li>terceiro lugar: <input type="text" name="terceiro lugar" value="França" disabled><br></li>
+                    <li>quarto lugar: <input type="text" name="quarto lugar" value="Belgica" disabled><br></li>
+                    <li>numero de partcipantes: <input type="number" name="numero de partcipantes" value="24"
+                            disabled><br>
+                    </li>
+                    <li>data de inicio: <input type="date" name="data de inicio" value="1986-05-31" disabled><br>
+                    </li>
+                    <li>data de termino: <input type="date" name="data de termino" value="1986-06-29" disabled><br>
+                    </li>
+                    <li>numero de estadios: <input type="number" name="numero de estadios" value="12" disabled><br>
+                    </li>
+                    <li>numero de jogos: <input type="number" name="numero de jogos" value="52" disabled><br></li>
+                    <li>numero de gols: <input type="number" name="numero de gols" value="132" disabled><br></li>
+                    <li>media de gols por partida: <input type="number" name="media de gols por partida" value="2.54"
+                            disabled><br></li>
+                    <li>bola oficial: <input type="text" name="bola oficial" value="Adidas Azteca " disabled><br>
+                    </li>
+                    <li>artilheiros: <input type="text" name="artilheiros" value="Gary Lineker" disabled><br></li>
+                    <li>mascote: <input type="text" name="mascote" value="PIQUE" disabled><br></li>
+                    <li>publico: <input type="number" name="publico" value="2393331" disabled><br></li>
+                </form>
+            </fieldset>
+        </form>
+    </main>
+    <button onclick="alternarConteudo('botao1')">Mostrar tabela de jogos</button>
+    <button onclick="alternarConteudo('botao2')">Mostrar artilharia</button>
+    <button onclick="alternarConteudo('botao3')">Mostrar estadios</button>
+    <button onclick="alternarConteudo('botao4')">Mostrar curiosidades</button>
+
+    <div class="conteudo" id="botao1">
+
+        <h2>tabela de jogos da copa de 1986</h2>
+        <button onclick="exibirConteudo('botaoA')">Grupo A</button>
+        <button onclick="exibirConteudo('botaoB')">Grupo B</button>
+        <button onclick="exibirConteudo('botaoC')">Grupo C</button>
+        <button onclick="exibirConteudo('botaoD')">Grupo D</button>
+        <button onclick="exibirConteudo('botaoE')">Grupo E</button>
+        <button onclick="exibirConteudo('botaoF')">Grupo F</button>
+        <button onclick="exibirConteudo('botaoG')">oitavas de final</button>
+        <button onclick="exibirConteudo('botaoH')">quartas de final</button>
+        <button onclick="exibirConteudo('botaoI')">Semifinal</button>
+        <button onclick="exibirConteudo('botaoJ')">disputa de terceiro lugar</button>
+        <button onclick="exibirConteudo('botaoK')">Grande Final</button>
+
+        <div class="conteudo-oculto" id="botaoA">
+            <table>
+                <h3>grupo A</h3>
+                <tr>
+                    <td><strong>data</strong></td>
+                    <td>time A</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>time B</td>
+                    <td><strong>Local</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>31 de maio</strong></td>
+                    <td>Bulgaria</td>
+                    <td>1</td>
+                    <td>x</td>
+                    <td>1</td>
+                    <td>Italia</td>
+                    <td><strong>Estadio-azteca</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>2 de junho</strong></td>
+                    <td>Argentina</td>
+                    <td>3</td>
+                    <td>x</td>
+                    <td>1</td>
+                    <td>Coreia do Sul</td>
+                    <td><strong>Estadio-Olimpico-Universitario</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>5 de junho</strong></td>
+                    <td>Italia</td>
+                    <td>1</td>
+                    <td>x</td>
+                    <td>1</td>
+                    <td>Argentina</td>
+                    <td><strong>Estadio-Cuauhtemoc</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>5 de junho</strong></td>
+                    <td>Coreia do Sul</td>
+                    <td>1</td>
+                    <td>x</td>
+                    <td>1</td>
+                    <td>Bulgaria</td>
+                    <td><strong>Estadio-Olimpico-Universitario</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>10 de junho</strong></td>
+                    <td>Coreia do Sul</td>
+                    <td>2</td>
+                    <td>x</td>
+                    <td>3</td>
+                    <td>Italia</td>
+                    <td><strong>Estadio-Cuauhtemoc</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>10 de junho</strong></td>
+                    <td>Argentina</td>
+                    <td>2</td>
+                    <td>x</td>
+                    <td>0</td>
+                    <td>Bulgaria</td>
+                    <td><strong>Estadio-Olimpico-Universitario</strong></td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th>POS</th>
+                    <th>P</th>
+                    <th>V</th>
+                    <th>E</th>
+                    <th>D</th>
+                    <th>GP</th>
+                    <th>GC</th>
+                    <th>SG</th>
+                </tr>
+                <tr class="linha-verde">
+                    <td>Argentina</td>
+                    <td>5</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>6</td>
+                    <td>2</td>
+                    <td>+4</td>
+                </tr>
+                <tr class="linha-verde">
+                    <td>Tchecoslovaquia</td>
+                    <td>4</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>5</td>
+                    <td>4</td>
+                    <td>+1</td>
+
+                </tr>
+                <tr class="linha-azul">
+                    <td>Bulgaria</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>4</td>
+                    <td>-2</td>
+                </tr>
+                <tr class="linha-vermelha">
+                    <td>Coreia do Sul</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>4</td>
+                    <td>7</td>
+                    <td>-3</td>
+                </tr>
+            </table>
+        </div>
+        <div class="conteudo-oculto" id="botaoB">
+            <table>
+                <h3>grupo B</h3>
+                <tr>
+                    <td><strong>data</strong></td>
+                    <td>time A</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>time B</td>
+                    <td><strong>Local</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>3 de junho</strong></td>
+                    <td>Belgica</td>
+                    <td>1</td>
+                    <td>x</td>
+                    <td>2</td>
+                    <td>Mexico</td>
+                    <td><strong>Estadio-azteca</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>4 de junho</strong></td>
+                    <td>Paraguai</td>
+                    <td>1</td>
+                    <td>x</td>
+                    <td>0</td>
+                    <td>Iraque</td>
+                    <td><strong>Estadio-Nemesio-Diez</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>7 de junho</strong></td>
+                    <td>Mexico</td>
+                    <td>1</td>
+                    <td>x</td>
+                    <td>1</td>
+                    <td>Paraguai</td>
+                    <td><strong>Estadio-azteca</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>8 de junho</strong></td>
+                    <td>Iraque</td>
+                    <td>1</td>
+                    <td>x</td>
+                    <td>2</td>
+                    <td>Belgica</td>
+                    <td><strong>Estadio-Nemesio-Diez</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>11 de junho</strong></td>
+                    <td>Paraguai</td>
+                    <td>2</td>
+                    <td>x</td>
+                    <td>2</td>
+                    <td>Belgica</td>
+                    <td><strong>Estadio-Nemesio-Diez</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>11 de junho</strong></td>
+                    <td>Iraque</td>
+                    <td>0</td>
+                    <td>x</td>
+                    <td>1</td>
+                    <td>Mexico</td>
+                    <td><strong>Estadio-azteca</strong></td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th>POS</th>
+                    <th>P</th>
+                    <th>V</th>
+                    <th>E</th>
+                    <th>D</th>
+                    <th>GP</th>
+                    <th>GC</th>
+                    <th>SG</th>
+                </tr>
+                <tr class="linha-verde">
+                    <td>Mexico</td>
+                    <td>5</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>4</td>
+                    <td>2</td>
+                    <td>+2</td>
+                </tr>
+                <tr class="linha-verde">
+                    <td>Paraguai</td>
+                    <td>4</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>+1</td>
+                </tr>
+                <tr class="linha-azul">
+                    <td>Belgica</td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>+0</td>
+                </tr>
+                <tr class="linha-vermelha">
+                    <td>Iraque</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>4</td>
+                    <td>-3</td>
+                </tr>
+            </table>
+        </div>
+        <div class="conteudo-oculto" id="botaoC">
+            <table>
+                <h3>grupo C</h3>
+                <tr>
+                    <td><strong>data</strong></td>
+                    <td>time A</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>time B</td>
+                    <td><strong>Local</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>1 de junho</strong></td>
+                    <td>Franca</td>
+                    <td>1</td>
+                    <td>x</td>
+                    <td>0</td>
+                    <td>Canada</td>
+                    <td><strong>Estadio-Leon</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>2 de junho</strong></td>
+                    <td>Uniao-Sovietica</td>
+                    <td>6</td>
+                    <td>x</td>
+                    <td>0</td>
+                    <td>Hungria</td>
+                    <td><strong>Estadio-Sergio-Leon-Chavez</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>5 de junho</strong></td>
+                    <td>Franca</td>
+                    <td>1</td>
+                    <td>x</td>
+                    <td>1</td>
+                    <td>Uniao-Sovietica</td>
+                    <td><strong>Estadio-Nou-Camp</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>6 de junho</strong></td>
+                    <td>Canada</td>
+                    <td>0</td>
+                    <td>x</td>
+                    <td>2</td>
+                    <td>Hungria</td>
+                    <td><strong>Estadio-Sergio-Leon-Chavez</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>9 de junho</strong></td>
+                    <td>Franca</td>
+                    <td>3</td>
+                    <td>x</td>
+                    <td>0</td>
+                    <td>Hungria</td>
+                    <td><strong>Estadio-Leon</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>9 de junho</strong></td>
+                    <td>Canada</td>
+                    <td>0</td>
+                    <td>x</td>
+                    <td>2</td>
+                    <td>Uniao-Sovietica</td>
+                    <td><strong>Estadio-Sergio-Leon-Chavez</strong></td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th>POS</th>
+                    <th>P</th>
+                    <th>V</th>
+                    <th>E</th>
+                    <th>D</th>
+                    <th>GP</th>
+                    <th>GC</th>
+                    <th>SG</th>
+                </tr>
+                <tr class="linha-verde">
+                    <td>Uniao-Sovietica</td>
+                    <td>5</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>9</td>
+                    <td>1</td>
+                    <td>+8</td>
+                </tr>
+                <tr class="linha-verde">
+                    <td>Franca</td>
+                    <td>5</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>5</td>
+                    <td>1</td>
+                    <td>+4</td>
+                </tr>
+                <tr class="linha-vermelha">
+                    <td>Hungria</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>9</td>
+                    <td>-7</td>
+                </tr>
+                <tr class="linha-vermelha">
+                    <td>Canada</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>3</td>
+                    <td>0</td>
+                    <td>5</td>
+                    <td>-5</td>
+                </tr>
+            </table>
+        </div>
+        <div class="conteudo-oculto" id="botaoD">
+            <table>
+                <h3>grupo D</h3>
+                <tr>
+                    <td><strong>data</strong></td>
+                    <td>time A</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>time B</td>
+                    <td><strong>Local</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>1 de junho</strong></td>
+                    <td>Espanha</td>
+                    <td>0</td>
+                    <td>x</td>
+                    <td>1</td>
+                    <td>Brasil</td>
+                    <td><strong>Estadio-Jalisco</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>3 de junho</strong></td>
+                    <td>Argelia</td>
+                    <td>1</td>
+                    <td>x</td>
+                    <td>1</td>
+                    <td>Irlanda do Norte</td>
+                    <td><strong>Estadio-Tres-de-Marzo</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>6 de junho</strong></td>
+                    <td>Brasil</td>
+                    <td>1</td>
+                    <td>x</td>
+                    <td>0</td>
+                    <td>Argelia</td>
+                    <td><strong>Estadio-Jalisco</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>7 de junho</strong></td>
+                    <td>Irlanda do Norte</td>
+                    <td>1</td>
+                    <td>x</td>
+                    <td>2</td>
+                    <td>Espanha</td>
+                    <td><strong>Estadio-Tres-de-Marzo</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>12 de junho</strong></td>
+                    <td>Brasil</td>
+                    <td>3</td>
+                    <td>x</td>
+                    <td>0</td>
+                    <td>Irlanda do Norte</td>
+                    <td><strong>Estadio-Jalisco</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>12 dejunho</strong></td>
+                    <td>Espanha</td>
+                    <td>3</td>
+                    <td>x</td>
+                    <td>0</td>
+                    <td>Argelia</td>
+                    <td><strong>Estadio-Tecnologico</strong></td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th>POS</th>
+                    <th>P</th>
+                    <th>V</th>
+                    <th>E</th>
+                    <th>D</th>
+                    <th>GP</th>
+                    <th>GC</th>
+                    <th>SG</th>
+                </tr>
+                <tr class="linha-verde">
+                    <td>Brasil</td>
+                    <td>6</td>
+                    <td>3</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>10</td>
+                    <td>3</td>
+                    <td>+7</td>
+                </tr>
+                <tr class="linha-verde">
+                    <td>Espanha</td>
+                    <td>4</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>5</td>
+                    <td>2</td>
+                    <td>+3</td>
+                </tr>
+                <tr class="linha-vermelha">
+                    <td>Irlanda do Norte</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>6</td>
+                    <td>-4</td>
+                </tr>
+                <tr class="linha-vermelha">
+                    <td>Argelia</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>5</td>
+                    <td>-4</td>
+                </tr>
+            </table>
+        </div>
+        <div class="conteudo-oculto" id="botaoE">
+            <table>
+                <h3>grupo E</h3>
+                <tr>
+                    <td><strong>4 de junho</strong></td>
+                    <td>Alemanha.oc</td>
+                    <td>1</td>
+                    <td>x</td>
+                    <td>1</td>
+                    <td>Uruguai</td>
+                    <td><strong>Estadio-La-Corregidora</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>4 de junho</strong></td>
+                    <td>Escocia</td>
+                    <td>0</td>
+                    <td>x</td>
+                    <td>1</td>
+                    <td>Dinamarca</td>
+                    <td><strong>Estadio-Neza-86</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>8 de junho</strong></td>
+                    <td>Alemanha.oc</td>
+                    <td>2</td>
+                    <td>x</td>
+                    <td>1</td>
+                    <td>Escocia</td>
+                    <td><strong>Estadio-La-Corregidora</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>8 de junho</strong></td>
+                    <td>Dinamarca</td>
+                    <td>6</td>
+                    <td>x</td>
+                    <td>1</td>
+                    <td>Uruguai</td>
+                    <td><strong>Estadio-Neza-86</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>13 de junho</strong></td>
+                    <td>Alemanha.oc</td>
+                    <td>0</td>
+                    <td>x</td>
+                    <td>2</td>
+                    <td>Dinamarca</td>
+                    <td><strong>Estadio-La-Corregidora</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>13 de junho</strong></td>
+                    <td>Uruguai</td>
+                    <td>0</td>
+                    <td>x</td>
+                    <td>0</td>
+                    <td>Escocia</td>
+                    <td><strong>Estadio-Neza-86</strong></td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th>POS</th>
+                    <th>P</th>
+                    <th>V</th>
+                    <th>E</th>
+                    <th>D</th>
+                    <th>GP</th>
+                    <th>GC</th>
+                    <th>SG</th>
+                </tr>
+                <tr class="linha-verde">
+                    <td>Dinamarca</td>
+                    <td>6</td>
+                    <td>3</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>9</td>
+                    <td>1</td>
+                    <td>+8</td>
+                </tr>
+                <tr class="linha-verde">
+                    <td>Alemanha.oc</td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>-1</td>
+                </tr>
+                <tr class="linha-azul">
+                    <td>Uruguai</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>7</td>
+                    <td>-5</td>
+                </tr>
+                <tr class="linha-vermelha">
+                    <td>Escocia</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>3</td>
+                    <td>-2</td>
+                </tr>
+            </table>
+        </div>
+        <div class="conteudo-oculto" id="botaoF">
+            <table>
+                <h3>grupo F</h3>
+                <tr>
+                    <td><strong>2 de junho</strong></td>
+                    <td>Polonia</td>
+                    <td>0</td>
+                    <td>x</td>
+                    <td>0</td>
+                    <td>Marrocos</td>
+                    <td><strong>Estadio-Universitario</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>3 de junho</strong></td>
+                    <td>Portugal</td>
+                    <td>1</td>
+                    <td>x</td>
+                    <td>0</td>
+                    <td>Inglaterra</td>
+                    <td><strong>Estadio-Tecnologico</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>6 de junho</strong></td>
+                    <td>Marrocos</td>
+                    <td>0</td>
+                    <td>x</td>
+                    <td>0</td>
+                    <td>Inglaterra</td>
+                    <td><strong>Estadio-Tecnologico</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>7 de junho</strong></td>
+                    <td>Polonia</td>
+                    <td>1</td>
+                    <td>x</td>
+                    <td>0</td>
+                    <td>Portugal</td>
+                    <td><strong>Estadio-Olimpico-Universitario</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>11 de junho</strong></td>
+                    <td>Polonia</td>
+                    <td>0</td>
+                    <td>x</td>
+                    <td>3</td>
+                    <td>Inglaterra</td>
+                    <td><strong>Estadio-Tecnologico</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>11 de junho</strong></td>
+                    <td>Marrocos</td>
+                    <td>3</td>
+                    <td>x</td>
+                    <td>1</td>
+                    <td>Portugal</td>
+                    <td><strong>Estadio-Tres-de-Marzo</strong></td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th>POS</th>
+                    <th>P</th>
+                    <th>V</th>
+                    <th>E</th>
+                    <th>D</th>
+                    <th>GP</th>
+                    <th>GC</th>
+                    <th>SG</th>
+                </tr>
+                <tr class="linha-verde">
+                    <td>Marrocos</td>
+                    <td>4</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>+2</td>
+                </tr>
+                <tr class="linha-verde">
+                    <td>Inglaterra</td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>+2</td>
+                </tr>
+                <tr class="linha-azul">
+                    <td>Polonia</td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>3</td>
+                    <td>-2</td>
+                </tr>
+                <tr class="linha-vermelha">
+                    <td>Portugal</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>4</td>
+                    <td>-2</td>
+                </tr>
+            </table>
+        </div>
+        <div class="conteudo-oculto" id="botaoG">
+            <table>
+                <h3>Oitavas de final</h3>
+                <tr>
+                    <td><strong>data</strong></td>
+                    <td>time A</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>time B</td>
+                    <td><strong>Local</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>15 de junho</strong></td>
+                    <td>Mexico</td>
+                    <td>2</td>
+                    <td>x</td>
+                    <td>0</td>
+                    <td>Bulgaria</td>
+                    <td><strong>Estadio-azteca</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>15 de junho</strong></td>
+                    <td>Uniao-Sovietica</td>
+                    <td>3</td>
+                    <td>x</td>
+                    <td>4</td>
+                    <td>Belgica</td>
+                    <td><strong>Estadio-Leon</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>16 de junho</strong></td>
+                    <td>Brasil</td>
+                    <td>4</td>
+                    <td>x</td>
+                    <td>0</td>
+                    <td>Polonia</td>
+                    <td><strong>Estadio-Jalisco</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>16 de junho</strong></td>
+                    <td>Argentina</td>
+                    <td>1</td>
+                    <td>x</td>
+                    <td>0</td>
+                    <td>Uruguai</td>
+                    <td><strong>Estadio-Cuauhtemoc</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>17 de junho</strong></td>
+                    <td>Franca</td>
+                    <td>2</td>
+                    <td>x</td>
+                    <td>0</td>
+                    <td>Italia</td>
+                    <td><strong>Estadio-Olimpico-Universitario</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>17 de junho</strong></td>
+                    <td>Marrocos</td>
+                    <td>0</td>
+                    <td>x</td>
+                    <td>1</td>
+                    <td>Alemanha.oc</td>
+                    <td><strong>Estadio-Universitario</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>18 de junho</strong></td>
+                    <td>Inglaterra</td>
+                    <td>3</td>
+                    <td>x</td>
+                    <td>0</td>
+                    <td>Mexico</td>
+                    <td><strong>Estadio-azteca</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>18 de junho</strong></td>
+                    <td>Dinamarca</td>
+                    <td>1</td>
+                    <td>x</td>
+                    <td>5</td>
+                    <td>Espanha</td>
+                    <td><strong>Estadio-La-Corregidora</strong></td>
+                </tr>
+            </table>
+        </div>
+        <div class="conteudo-oculto" id="botaoH">
+            <table>
+                <h3>Quartas de final</h3>
+                <tr>
+                    <td><strong>data</strong></td>
+                    <td>time A</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>time B</td>
+                    <td><strong>Local</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>21 de junho</strong></td>
+                    <td>Brasil</td>
+                    <td>1(3)</td>
+                    <td>x</td>
+                    <td>1(4)</td>
+                    <td>Franca</td>
+                    <td><strong>Estadio-Jalisco</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>21 de junho</strong></td>
+                    <td>Mexico</td>
+                    <td>0(1)</td>
+                    <td>x</td>
+                    <td>0(4)</td>
+                    <td>Alemanha</td>
+                    <td><strong>Estadio-Universitario</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>22 de junho</strong></td>
+                    <td>Argentina</td>
+                    <td>2</td>
+                    <td>x</td>
+                    <td>1</td>
+                    <td>Inglaterra</td>
+                    <td><strong>Estadio-azteca</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>22 de junho</strong></td>
+                    <td>Belgica</td>
+                    <td>1(5)</td>
+                    <td>x</td>
+                    <td>1(4)</td>
+                    <td>Espanha</td>
+                    <td><strong>Estadio-Cuauhtemoc</strong></td>
+                </tr>
+            </table>
+        </div>
+        <div class="conteudo-oculto" id="botaoI">
+            <table>
+                <h3>Semifinal</h3>
+                <tr>
+                    <td><strong>data</strong></td>
+                    <td>time A</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>time B</td>
+                    <td><strong>Local</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>24 de junho</strong></td>
+                    <td>Alemanha.oc</td>
+                    <td>2</td>
+                    <td>x</td>
+                    <td>0</td>
+                    <td>Franca</td>
+                    <td><strong>Estadio-Jalisco</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>25 de junho</strong></td>
+                    <td>Argentina</td>
+                    <td>2</td>
+                    <td>x</td>
+                    <td>0</td>
+                    <td>Belgica</td>
+                    <td><strong>Estadio-azteca</strong></td>
+                </tr>
+            </table>
+        </div>
+        <div class="conteudo-oculto" id="botaoJ">
+            <table>
+                <h3>Disputa de terceiro lugar</h3>
+                <tr>
+                    <td><strong>data</strong></td>
+                    <td>time A</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>time B</td>
+                    <td><strong>Local</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>28 de junho</strong></td>
+                    <td>Franca</td>
+                    <td>4</td>
+                    <td>x</td>
+                    <td>2</td>
+                    <td>Belgica</td>
+                    <td><strong>Estadio-Cuauhtemoc</strong></td>
+                </tr>
+            </table>
+        </div>
+        <div class="conteudo-oculto" id="botaoK">
+            <table>
+                <h3>Grande Final</h3>
+                <tr>
+                    <td><strong>data</strong></td>
+                    <td>time A</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>time B</td>
+                    <td><strong>Local</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>29 de junho</strong></td>
+                    <td>Argentina</td>
+                    <td>3</td>
+                    <td>x</td>
+                    <td>2</td>
+                    <td>Alemanha.oc</td>
+                    <td><strong>Estadio-azteca</strong></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="conteudo" id="botao2">
+
+        <h2>Botão 2</h2>
+        <p>Este é o conteúdo do Botão 2.</p>
+    </div>
+
+    <div class="conteudo" id="botao3">
+        <!-- Botão 3 -->
+        <h2>Botão 3</h2>
+        <p>Este é o conteúdo do Botão 3.</p>
+    </div>
+
+    <div class="conteudo" id="botao4">
+        <!-- Botão 4 -->
+        <h2>Botão 4</h2>
+        <p>Este é o conteúdo do Botão 4.</p>
+    </div>
 </body>
+
+</html>
