@@ -37,40 +37,682 @@
             <a href="copa2022.html">Copa 2022</a>
         </nav>
     </header>
-        <main>
-            <h1 style = "text-align: center;">COPA DO MUNDO DE 1970</h1>
-            <img src="../assets/imagens/img1970/emblema1970.png" alt="emblema.copa1970" src="emblema.copa1970">
-            <form>
-                <fieldset>
-                    <form>
-                        <legend>Dados do Torneio</legend>
-                        <li>pais-sede: <input type="text" name="pais-sede" value="Mexico" disabled><br></li>
-                        <li>campeao: <input type="text" name="campeao" value="Brasil" disabled><br></li>
-                        <li>vice-campeao: <input type="text" name="vice-campeao" value="Italia" disabled><br></li>
-                        <li>terceiro lugar: <input type="text" name="terceiro lugar" value="Alemanha" disabled><br></li>
-                        <li>quarto lugar: <input type="text" name="quarto lugar" value="Uruguai" disabled><br></li>
-                        <li>numero de partcipantes: <input type="number" name="numero de partcipantes" value="16"
-                                disabled><br>
-                        </li>
-                        <li>data de inicio: <input type="date" name="data de inicio" value="1970-05-31" disabled><br>
-                        </li>
-                        <li>data de termino: <input type="date" name="data de termino" value="1970-06-21" disabled><br>
-                        </li>
-                        <li>numero de estadios: <input type="number" name="numero de estadios" value="6" disabled><br>
-                        </li>
-                        <li>numero de jogos: <input type="number" name="numero de jogos" value="32" disabled><br></li>
-                        <li>numero de gols: <input type="number" name="numero de gols" value="95" disabled><br></li>
-                        <li>media de gols por partida: <input type="number" name="media de gols por partida"
-                                value="2.97" disabled><br></li>
-                        <li>bola oficial: <input type="text" name="bola oficial" value="Telstar" disabled><br></li>
-                        <li>artilheiros: <input type="text" name="artilheiros" value="Gerd Muller" disabled><br></li>
-                        <li>mascote: <input type="text" name="mascote" value="Juanito Maravilha" disabled><br></li>
-                        <li>publico: <input type="number" name="publico" value="1603975" disabled><br></li>
-                    </form>
-                </fieldset>
-            </form>
-        </main>
-        <button><a href="tabelas1970.html">ver dados da copa 1970</a></button>
-</body>   
-                        
-      
+    <main>
+        <h1 style="text-align: center;">COPA DO MUNDO DE 1970</h1>
+        <img src="../assets/imagens/img1970/emblema1970.png" alt="emblema.copa1970" src="emblema.copa1970">
+        <form>
+            <fieldset>
+                <form>
+                    <legend>Dados do Torneio</legend>
+                    <li>pais-sede: <input type="text" name="pais-sede" value="Mexico" disabled><br></li>
+                    <li>campeao: <input type="text" name="campeao" value="Brasil" disabled><br></li>
+                    <li>vice-campeao: <input type="text" name="vice-campeao" value="Italia" disabled><br></li>
+                    <li>terceiro lugar: <input type="text" name="terceiro lugar" value="Alemanha" disabled><br></li>
+                    <li>quarto lugar: <input type="text" name="quarto lugar" value="Uruguai" disabled><br></li>
+                    <li>numero de partcipantes: <input type="number" name="numero de partcipantes" value="16"
+                            disabled><br>
+                    </li>
+                    <li>data de inicio: <input type="date" name="data de inicio" value="1970-05-31" disabled><br>
+                    </li>
+                    <li>data de termino: <input type="date" name="data de termino" value="1970-06-21" disabled><br>
+                    </li>
+                    <li>numero de estadios: <input type="number" name="numero de estadios" value="6" disabled><br>
+                    </li>
+                    <li>numero de jogos: <input type="number" name="numero de jogos" value="32" disabled><br></li>
+                    <li>numero de gols: <input type="number" name="numero de gols" value="95" disabled><br></li>
+                    <li>media de gols por partida: <input type="number" name="media de gols por partida" value="2.97"
+                            disabled><br></li>
+                    <li>bola oficial: <input type="text" name="bola oficial" value="Telstar" disabled><br></li>
+                    <li>artilheiros: <input type="text" name="artilheiros" value="Gerd Muller" disabled><br></li>
+                    <li>mascote: <input type="text" name="mascote" value="Juanito Maravilha" disabled><br></li>
+                    <li>publico: <input type="number" name="publico" value="1603975" disabled><br></li>
+                </form>
+            </fieldset>
+        </form>
+    </main>
+    <button onclick="alternarConteudo('botao1')">Mostrar tabela de jogos</button>
+    <button onclick="alternarConteudo('botao2')">Mostrar artilharia</button>
+    <button onclick="alternarConteudo('botao3')">Mostrar estadios</button>
+    <button onclick="alternarConteudo('botao4')">Mostrar curiosidades</button>
+
+    <div class="conteudo" id="botao1">
+
+        <h2>tabela de jogos da copa de 1970</h2>
+        <button onclick="exibirConteudo('botaoA')">Grupo A</button>
+        <button onclick="exibirConteudo('botaoB')">Grupo B</button>
+        <button onclick="exibirConteudo('botaoC')">Grupo C</button>
+        <button onclick="exibirConteudo('botaoD')">Grupo D</button>
+        <button onclick="exibirConteudo('botaoE')">quartas de final</button>
+        <button onclick="exibirConteudo('botaoF')">Semifinal</button>
+        <button onclick="exibirConteudo('botaoG')">disputa de terceiro lugar</button>
+        <button onclick="exibirConteudo('botaoH')">Grande Final</button>
+        <div class="conteudo-oculto" id="botaoA">
+            <table>
+                <h3>grupo A</h3>
+                <tr>
+                    <td><strong>data</strong></td>
+                    <td>time A</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>time B</td>
+                    <td><strong>Local</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>31 de maio</strong></td>
+                    <td>Franca</td>
+                    <td>0</td>
+                    <td>x</td>
+                    <td>1</td>
+                    <td>Senegal</td>
+                    <td><strong>Seul-World-Cup-Stadium</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>1 de junho</strong></td>
+                    <td>Uruguai</td>
+                    <td>1</td>
+                    <td>x</td>
+                    <td>2</td>
+                    <td>Dinamarca</td>
+                    <td><strong>Munsu-Football-Stadium</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>6 de junho</strong></td>
+                    <td>Dinamarca</td>
+                    <td>1</td>
+                    <td>x</td>
+                    <td>1</td>
+                    <td>Senegal</td>
+                    <td><strong>Daegu-World-Cup-Stadium</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>6 de junho</strong></td>
+                    <td>Franca</td>
+                    <td>0</td>
+                    <td>x</td>
+                    <td>0</td>
+                    <td>Uruguai</td>
+                    <td><strong>Busan-Asiad-Main-Stadium</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>11 de junho</strong></td>
+                    <td>Dinamarca</td>
+                    <td>2</td>
+                    <td>x</td>
+                    <td>0</td>
+                    <td>Franca</td>
+                    <td><strong>Incheon-Football-Stadium</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>11 de junho</strong></td>
+                    <td>Senegal</td>
+                    <td>3</td>
+                    <td>x</td>
+                    <td>3</td>
+                    <td>Uruguai</td>
+                    <td><strong>Suwon-World-Cup-Stadium</strong></td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th>POS</th>
+                    <th>P</th>
+                    <th>V</th>
+                    <th>E</th>
+                    <th>D</th>
+                    <th>GP</th>
+                    <th>GC</th>
+                    <th>SG</th>
+                </tr>
+                <tr class="linha-verde">
+                    <td>Dinamarca</td>
+                    <td>7</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>5</td>
+                    <td>2</td>
+                    <td>+3</td>
+                </tr>
+                <tr class="linha-verde">
+                    <td>Senegal</td>
+                    <td>5</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>5</td>
+                    <td>4</td>
+                    <td>+1</td>
+
+                </tr>
+                <tr class="linha-vermelha">
+                    <td>Uruguai</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>-1</td>
+                </tr>
+                <tr class="linha-vermelha">
+                    <td>Franca</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>3</td>
+                    <td>-3</td>
+                </tr>
+            </table>
+        </div>
+        <div class="conteudo-oculto" id="botaoB">
+            <table>
+                <h3>grupo B</h3>
+                <tr>
+                    <td><strong>data</strong></td>
+                    <td>time A</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>time B</td>
+                    <td><strong>Local</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>2 de junho</strong></td>
+                    <td>Paraguai</td>
+                    <td>2</td>
+                    <td>x</td>
+                    <td>2</td>
+                    <td>Africa do Sul</td>
+                    <td><strong>Estadio-Busan-Asiad</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>2 de junho</strong></td>
+                    <td>Espanha</td>
+                    <td>3</td>
+                    <td>x</td>
+                    <td>1</td>
+                    <td>Eslovenia</td>
+                    <td><strong>Gwangju-World-Cup-Stadium</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>7 de junho</strong></td>
+                    <td>Espanha</td>
+                    <td>3</td>
+                    <td>x</td>
+                    <td>1</td>
+                    <td>Paraguai</td>
+                    <td><strong>Jeonju-World-Cup-Stadium</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>7 de junho</strong></td>
+                    <td>Africa do Sul</td>
+                    <td>1</td>
+                    <td>x</td>
+                    <td>0</td>
+                    <td>Eslovenia</td>
+                    <td><strong>Daegu-Stadium</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>12 de junho</strong></td>
+                    <td>Africa do Sul</td>
+                    <td>2</td>
+                    <td>x</td>
+                    <td>3</td>
+                    <td>Espanha</td>
+                    <td><strong>Daejeon-World-Cup-Stadium</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>12 de junho</strong></td>
+                    <td>Eslovenia</td>
+                    <td>1</td>
+                    <td>x</td>
+                    <td>3</td>
+                    <td>Paraguai</td>
+                    <td><strong>Jeju-World-Cup-Stadium</strong></td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th>POS</th>
+                    <th>P</th>
+                    <th>V</th>
+                    <th>E</th>
+                    <th>D</th>
+                    <th>GP</th>
+                    <th>GC</th>
+                    <th>SG</th>
+                </tr>
+                <tr class="linha-verde">
+                    <td>Espanha</td>
+                    <td>9</td>
+                    <td>3</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>9</td>
+                    <td>4</td>
+                    <td>+5</td>
+                </tr>
+                <tr class="linha-verde">
+                    <td>Paraguai</td>
+                    <td>4</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>6</td>
+                    <td>6</td>
+                    <td>+0</td>
+                </tr>
+                <tr class="linha-vermelha">
+                    <td>Africa do Sul</td>
+                    <td>4</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>+0</td>
+                </tr>
+                <tr class="linha-vermelha">
+                    <td>Eslovenia</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>7</td>
+                    <td>-5</td>
+                </tr>
+            </table>
+        </div>
+        <div class="conteudo-oculto" id="botaoC">
+            <table>
+                <h3>grupo C</h3>
+                <tr>
+                    <td><strong>data</strong></td>
+                    <td>time A</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>time B</td>
+                    <td><strong>Local</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>3 de junho</strong></td>
+                    <td>Brasil</td>
+                    <td>2</td>
+                    <td>x</td>
+                    <td>1</td>
+                    <td>Turquia</td>
+                    <td><strong>Ulsan-Munsu-Football-Stadium</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>4 de junho</strong></td>
+                    <td>China</td>
+                    <td>0</td>
+                    <td>x</td>
+                    <td>2</td>
+                    <td>Costa Rica</td>
+                    <td><strong>Gwangju-World-Cup-Stadium</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>8 de junho</strong></td>
+                    <td>Brasil</td>
+                    <td>4</td>
+                    <td>x</td>
+                    <td>0</td>
+                    <td>China</td>
+                    <td><strong>Jeju-World-Cup-Stadium</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>9 de junho</strong></td>
+                    <td>Costa Rica</td>
+                    <td>1</td>
+                    <td>x</td>
+                    <td>1</td>
+                    <td>Turquia</td>
+                    <td><strong>Estadio-Munhak-de-Incheon</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>13 de junho</strong></td>
+                    <td>Costa Rica</td>
+                    <td>2</td>
+                    <td>x</td>
+                    <td>5</td>
+                    <td>Brasil</td>
+                    <td><strong>Suwon-World-Cup-Stadium</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>13 de junho</strong></td>
+                    <td>Turquia</td>
+                    <td>3</td>
+                    <td>x</td>
+                    <td>0</td>
+                    <td>China</td>
+                    <td><strong>Seul-World-Cup-Stadium</strong></td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th>POS</th>
+                    <th>P</th>
+                    <th>V</th>
+                    <th>E</th>
+                    <th>D</th>
+                    <th>GP</th>
+                    <th>GC</th>
+                    <th>SG</th>
+                </tr>
+                <tr class="linha-verde">
+                    <td>Brasil</td>
+                    <td>9</td>
+                    <td>3</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>11</td>
+                    <td>3</td>
+                    <td>+8</td>
+                </tr>
+                <tr class="linha-verde">
+                    <td>Turquia</td>
+                    <td>4</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>5</td>
+                    <td>3</td>
+                    <td>+2</td>
+                </tr>
+                <tr class="linha-vermelha">
+                    <td>Costa Rica</td>
+                    <td>4</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>-1</td>
+                </tr>
+                <tr class="linha-vermelha">
+                    <td>China</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>3</td>
+                    <td>0</td>
+                    <td>9</td>
+                    <td>-9</td>
+                </tr>
+            </table>
+        </div>
+        <div class="conteudo-oculto" id="botaoD">
+            <table>
+                <h3>grupo D</h3>
+                <tr>
+                    <td><strong>data</strong></td>
+                    <td>time A</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>time B</td>
+                    <td><strong>Local</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>4 de junho</strong></td>
+                    <td>Coreia Do Sul</td>
+                    <td>2</td>
+                    <td>x</td>
+                    <td>0</td>
+                    <td>Polonia</td>
+                    <td><strong>Estadio-Busan-Asiad</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>5 de junho</strong></td>
+                    <td>Estados Unidos</td>
+                    <td>3</td>
+                    <td>x</td>
+                    <td>2</td>
+                    <td>Portugal</td>
+                    <td><strong>Jeonju-World-Cup-Stadium</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>10 de junho</strong></td>
+                    <td>Coreia Do Sul</td>
+                    <td>1</td>
+                    <td>x</td>
+                    <td>1</td>
+                    <td>Estados Unidos</td>
+                    <td><strong>Daegu-Stadium</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>10 de junho</strong></td>
+                    <td>Portugal</td>
+                    <td>4</td>
+                    <td>x</td>
+                    <td>0</td>
+                    <td>Polonia</td>
+                    <td><strong>Jeonju-World-Cup-Stadium</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>14 de junho</strong></td>
+                    <td>Portugal</td>
+                    <td>0</td>
+                    <td>x</td>
+                    <td>1</td>
+                    <td>Coreia Do Sul</td>
+                    <td><strong>Estadio-Munhak-de-Incheon</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>14 dejunho</strong></td>
+                    <td>Polonia</td>
+                    <td>3</td>
+                    <td>x</td>
+                    <td>1</td>
+                    <td>Estados Unidos</td>
+                    <td><strong>FIFA-WM-Stadion-Gelsenkirchen</strong></td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th>POS</th>
+                    <th>P</th>
+                    <th>V</th>
+                    <th>E</th>
+                    <th>D</th>
+                    <th>GP</th>
+                    <th>GC</th>
+                    <th>SG</th>
+                </tr>
+                <tr class="linha-verde">
+                    <td>Coreia Do Sul</td>
+                    <td>7</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>4</td>
+                    <td>1</td>
+                    <td>+3</td>
+                </tr>
+                <tr class="linha-verde">
+                    <td>Estados Unidos</td>
+                    <td>4</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>-1</td>
+                </tr>
+                <tr class="linha-vermelha">
+                    <td>Portugal</td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>2</td>
+                    <td>6</td>
+                    <td>4</td>
+                    <td>+2</td>
+                </tr>
+                <tr class="linha-vermelha">
+                    <td>Polonia</td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>7</td>
+                    <td>-4</td>
+                </tr>
+            </table>
+        </div>
+        <div class="conteudo-oculto" id="botaoE">
+            <table>
+                <h3>Quartas de final</h3>
+                <tr>
+                    <td><strong>data</strong></td>
+                    <td>time A</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>time B</td>
+                    <td><strong>Local</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>21 de junho</strong></td>
+                    <td>Inglaterra</td>
+                    <td>1</td>
+                    <td>x</td>
+                    <td>2</td>
+                    <td>Brasil</td>
+                    <td><strong>Shizuoka-Stadium-Ecopa</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>21 de junho</strong></td>
+                    <td>Alemanha</td>
+                    <td>1</td>
+                    <td>x</td>
+                    <td>0</td>
+                    <td>Estados Unidos</td>
+                    <td><strong>Ulsan-Munsu-Football-Stadium</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>22 de junho</strong></td>
+                    <td>Espanha</td>
+                    <td>0(3)</td>
+                    <td>x</td>
+                    <td>0(5)</td>
+                    <td>Coreia do Sul</td>
+                    <td><strong>Gwangju-World-Cup-Stadium</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>22 de junho</strong></td>
+                    <td>Senegal</td>
+                    <td>0</td>
+                    <td>x</td>
+                    <td>1</td>
+                    <td>Turquia</td>
+                    <td><strong>Osaka-Nagai-Stadium</strong></td>
+                </tr>
+            </table>
+        </div>
+        <div class="conteudo-oculto" id="botaoF">
+            <table>
+                <h3>Semifinal</h3>
+                <tr>
+                    <td><strong>data</strong></td>
+                    <td>time A</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>time B</td>
+                    <td><strong>Local</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>25 de junho</strong></td>
+                    <td>Alemanha</td>
+                    <td>1</td>
+                    <td>x</td>
+                    <td>0</td>
+                    <td>Coreia do Sul</td>
+                    <td><strong>Seul-World-Cup-Stadium</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>26 de junho</strong></td>
+                    <td>Brasil</td>
+                    <td>1</td>
+                    <td>x</td>
+                    <td>0</td>
+                    <td>Turquia</td>
+                    <td><strong>Estadio-Saitama</strong></td>
+                </tr>
+            </table>
+        </div>
+        <div class="conteudo-oculto" id="botaoG">
+            <table>
+                <h3>Disputa de terceiro lugar</h3>
+                <tr>
+                    <td><strong>data</strong></td>
+                    <td>time A</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>time B</td>
+                    <td><strong>Local</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>29 de junho</strong></td>
+                    <td>Alemanha.oc</td>
+                    <td>2</td>
+                    <td>x</td>
+                    <td>3</td>
+                    <td>Turquia</td>
+                    <td><strong>Daegu-Stadium</strong></td>
+                </tr>
+            </table>
+        </div>
+        <div class="conteudo-oculto" id="botaoH">
+            <table>
+                <h3>Grande Final</h3>
+                <tr>
+                    <td><strong>data</strong></td>
+                    <td>time A</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>time B</td>
+                    <td><strong>Local</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>21 de junho</strong></td>
+                    <td>Brasil</td>
+                    <td>4</td>
+                    <td>x</td>
+                    <td>1</td>
+                    <td>Italia</td>
+                    <td><strong>estadio-azteca</strong></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="conteudo" id="botao2">
+
+        <h2>Botão 2</h2>
+        <p>Este é o conteúdo do Botão 2.</p>
+    </div>
+
+    <div class="conteudo" id="botao3">
+        <!-- Botão 3 -->
+        <h2>Botão 3</h2>
+        <p>Este é o conteúdo do Botão 3.</p>
+    </div>
+
+    <div class="conteudo" id="botao4">
+        <!-- Botão 4 -->
+        <h2>Botão 4</h2>
+        <p>Este é o conteúdo do Botão 4.</p>
+    </div>
+</body>
+
+</html>
