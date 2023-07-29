@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="quiz-container">
+    <h1>Quiz sobre algum assunto</h1>
+    <form id="quiz-form">
+      <div class="question" id="q1">
+        <p>Pergunta 1: que jogador colombiano foi assasinado depois da copa de 1994 por causa de um gol contra?</p>
+        <label>
+          <input type="radio" name="q1" value="a">a) higuita
+        </label>
+        <label>
+          <input type="radio" name="q1" value="b">b) alvarez
+        </label>
+        <label>
+          <input type="radio" name="q1" value="c">c) escobar
+        </label>
+        <label>
+          <input type="radio" name="q1" value="d">d) Herrera
+        </label>
+      </div>
+
+      <div class="question" id="q2">
+        <p>Pergunta 2:qual a bola oficial da copa de 2010</p>
+        <label>
+          <input type="radio" name="q2" value="a">a) cafuza
+        </label>
+        <label>
+          <input type="radio" name="q2" value="b">b) jabulani
+        </label>
+        <label>
+          <input type="radio" name="q2" value="c">c) teslar 18
+        </label>
+        <label>
+          <input type="radio" name="q2" value="d">d) al rihla
+        </label>
+      </div>
+
+      <div class="question" id="q3">
+        <p>Pergunta 3: que seleção eliminou o brasil na copa de 1954?</p>
+        <label>
+          <input type="radio" name="q3" value="a">a) Hungria
+        </label>
+        <label>
+          <input type="radio" name="q3" value="b">b) Espanha
+        </label>
+        <label>
+          <input type="radio" name="q3" value="c">c) Portugal
+        </label>
+        <label>
+          <input type="radio" name="q3" value="d">d) italia
+        </label>
+      </div>
+
+      <!-- Adicione aqui mais perguntas, seguindo o mesmo formato -->
+
+      <button type="button" onclick="checkAnswers()">Verificar Respostas</button>
+    </form>
+    <div id="result"></div>
+    <div id="question-container"></div>
+  </div>
+  <script src="../script/quizcopas.js"></script>
+</body>
+</html>

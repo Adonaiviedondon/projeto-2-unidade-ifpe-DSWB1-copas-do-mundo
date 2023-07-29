@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Quiz</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="quiz-container">
+    <h1>Quiz sobre algum assunto</h1>
+    <form id="quiz-form">
+      <div class="question" id="q1">
+        <p>Pergunta 1: Qual é a capital do Brasil?</p>
+        <label>
+          <input type="radio" name="q1" value="a">a) São Paulo
+        </label>
+        <label>
+          <input type="radio" name="q1" value="b">b) Rio de Janeiro
+        </label>
+        <label>
+          <input type="radio" name="q1" value="c">c) Brasília
+        </label>
+        <label>
+          <input type="radio" name="q1" value="d">d) Belo Horizonte
+        </label>
+      </div>
+
+      <div class="question" id="q2">
+        <p>Pergunta 2: Qual é o maior planeta do sistema solar?</p>
+        <label>
+          <input type="radio" name="q2" value="a">a) Marte
+        </label>
+        <label>
+          <input type="radio" name="q2" value="b">b) Júpiter
+        </label>
+        <label>
+          <input type="radio" name="q2" value="c">c) Terra
+        </label>
+        <label>
+          <input type="radio" name="q2" value="d">d) Vênus
+        </label>
+      </div>
+
+      <!-- Adicione aqui mais perguntas, seguindo o mesmo formato -->
+
+      <button type="button" onclick="checkAnswers()">Verificar Respostas</button>
+    </form>
+    <div id="result"></div>
+    <div id="question-container"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
