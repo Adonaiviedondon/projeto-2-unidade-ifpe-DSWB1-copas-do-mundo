@@ -7,6 +7,7 @@ let correctAnswers = {
   q1: 'c',
   q2: 'b',
   q3: 'a', 
+  q4: 'b',
   // Adicione aqui as respostas corretas para as outras perguntas
 };
 
