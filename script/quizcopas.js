@@ -8,7 +8,13 @@ let correctAnswers = {
   q2: 'b',
   q3: 'a', 
   q4: 'b',
-  // Adicione aqui as respostas corretas para as outras perguntas
+  q5: 'c',
+  q6: 'c',
+  q7: 'd',
+  q8: 'b',
+  q9: 'a',
+  q10: 'b',
+  
 };
 
 function checkAnswer(questionId, correctAnswer) {
@@ -16,21 +22,21 @@ function checkAnswer(questionId, correctAnswer) {
   const selectedOption = question.querySelector(`input[name="${questionId}"]:checked`);
 
   if (!selectedOption) {
-    return false; // Se o usuário não tiver selecionado nenhuma resposta, retorna falso
+    return false; 
   }
 
   const answer = selectedOption.value;
 
   if (answer === correctAnswer) {
     selectedOption.parentElement.classList.add('correct');
-    return true; // Retorna true se a resposta for correta
+    return true; 
   } else {
     selectedOption.parentElement.classList.add('incorrect');
 
-    // Exibir a resposta correta em verde
+    
     const correctOption = question.querySelector(`input[value="${correctAnswer}"]`);
     correctOption.parentElement.classList.add('correct');
-    return false; // Retorna false se a resposta for incorreta
+    return false; 
   }
 }
 
@@ -50,7 +56,7 @@ function checkAnswers() {
       userErrors++;
     }
 
-    // Desabilitar todas as opções após a resposta
+    
     const options = question.querySelectorAll('input');
     options.forEach(option => {
       option.disabled = true;
