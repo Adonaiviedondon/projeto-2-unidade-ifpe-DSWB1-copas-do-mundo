@@ -113,3 +113,9 @@ button:hover {
   background-color: blue;
   color: black;
 }
+figcaption {
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 8px;
+}
