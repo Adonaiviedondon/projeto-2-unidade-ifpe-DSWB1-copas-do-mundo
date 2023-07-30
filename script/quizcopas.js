@@ -14,7 +14,10 @@ let correctAnswers = {
   q8: 'b',
   q9: 'a',
   q10: 'b',
-  
+  q11: 'b',
+  q12: 'd',
+  q13: 'c',
+  q14: 'b',
 };
 
 function checkAnswer(questionId, correctAnswer) {
