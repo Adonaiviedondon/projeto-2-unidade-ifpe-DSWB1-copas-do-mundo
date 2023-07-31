@@ -119,3 +119,26 @@ figcaption {
   font-size: 16px;
   margin-top: 8px;
 }
+@media screen and (max-width: 768px) {
+  main {
+    padding: 10px;
+  }
+  h1 {
+    font-size: 20px;
+  }
+  img {
+    margin: 10px auto;
+  }
+}
+@media screen and (max-width: 480px) {
+  main {
+    padding: 5px;
+  }
+  h1 {
+    font-size: 18px;
+  }
+  img {
+    margin: 5px auto;
+  }
+}
+
