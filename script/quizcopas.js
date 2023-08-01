@@ -19,6 +19,7 @@ let correctAnswers = {
   q13: 'c',
   q14: 'b',
   q15: 'b',
+  q16: 'a',
 };
 
 function checkAnswer(questionId, correctAnswer) {
